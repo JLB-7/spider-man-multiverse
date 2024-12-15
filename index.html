@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homem Aranha | Multiversos</title>
+
+  <!-- CSS -->
+   <link rel="stylesheet" href="./assets/css/home-page-styles.css">
+
+   <!-- Javascript -->
+   <script src="./assets/scripts/script.js"></script>
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li class="menu-item">
+        <a href="/">Página Inicial</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Tobey Maguire</a>
+      </li>
+      <li class="menu-item menu-icon">
+        <img src="./assets/images/icons/spider.svg" alt="Multiverso do Homem Aranha">
+      </li>
+      <li class="menu-item">
+        <a href="#">Andrew Garfield</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Tom Holland</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+      <a href="./pages/tobey-maguire/spiderman1.html" class="card" id="spider-man-01">
+        <img class="card-background" src="./assets/images/pic-sm-bg-01.jpg" alt="">
+        <img class="card-image" src="./assets/images/spider-man-01.png" alt="Homem Aranha do Tobey Maguire">
+        <h2 class="card-title">Tobey Maguire</h2>
+      </a>
+      <a href="#" class="card" id="spider-man-02">
+        <img class="card-background" src="./assets/images/pic-sm-bg-02.jpg" alt="">
+        <img class="card-image" src="./assets/images/spider-man-02.png" alt="Homem Aranha do Tom Holland">
+        <h2 class="card-title">Tom Holland</h2>
+      </a>
+      <a href="#" class="card" id="spider-man-03">
+        <img class="card-background" src="./assets/images/pic-sm-bg-03.jpg">
+        <img class="card-image" id="card__image__Andrew" src="./assets/images/spider-man-03.png" alt="Homem Aranha do Andrew Garfield">
+        <h2 class="card-title">Andrew Garfield</h2>
+      </a>
+    </div>
+  </div>
+
+  <div class="controller">
+    <div id="1" onclick="selectCarouselItem(this)" class="controller-button controller-button--active">
+      01
+    </div>
+    <div id="2" onclick="selectCarouselItem(this)" class="controller-button">
+      02
+    </div>
+    <div id="3" onclick="selectCarouselItem(this)" class="controller-button">
+      03
+    </div>
+    <div class="controller-line"></div>
+  </div>
+
+</body>
+</html>
